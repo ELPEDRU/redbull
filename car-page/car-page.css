@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* hero */
+.container{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.boxs {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    width: 100%;
+    max-width: 1400px;
+    margin-top: 200px;
+    background-color: #121F45;
+    border-radius: 20px;
+    scrollbar-width: none;
+
+}
+.box {
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+    scroll-margin-top: 100vh;
+    text-align: center;
+}
+
+.boxs::-webkit-scrollbar {
+    display: none;
+}
+
+
+.box img {
+    width: 100%;
+}
+.row a {
+    font-size: 2rem;
+    color: #fffcfc;
+    text-decoration: none;
+    padding: 0 30px;
+}
+.box .row {
+    margin-top: auto;
+}
+h2{
+    color: #fffcfc;
+    margin: 5px ;
+}
+h1{
+    text-align: center;
+    padding: 20px;
+    font-size: 2rem;
+    color: #fffcfc;
+}
+p{
+    text-align: center;
+    padding: 20px;
+    font-size: 1.2rem;
+    color: #f8f6f6;
+}
+button{
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #DB0A40;
+    background-color: rgb(112, 110, 110);
+    border: none;
+    cursor: pointer;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+}
+/* header */
+.header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;  
+    background-color: #121F45;
+    padding: 10px 30px;
+    height: 70px;
+    border-bottom: 2px solid #DB0A40;
+}
+
+.btop {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+body{
+    background-color: #323233;
+}
+/* button hover  */
+.hover-button {
+    background-color: #DB0A40;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+.hover-button:hover {
+    background-color: #FFC906;
+    transform: scale(1.1);
+}
+/* footer */
+.footer {
+    background-color: #121F45;
+    color: #f8f6f6;
+    text-align: center;
+    padding: 20px;
+    border-top: 2px solid #DB0A40;
+}
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}   
